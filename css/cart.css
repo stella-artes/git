@@ -4,11 +4,12 @@
  text-align: left;
 }
 .title h2 {
- text-align: left;
+  text-align: center;
  font-size: 25px;
  font-weight: bolder;
  color: #333;
  text-transform: uppercase;
+ border-bottom: 1px solid var(--warning);
 }
 .title h3 {
  color: #999;

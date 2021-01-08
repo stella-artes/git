@@ -347,12 +347,14 @@ ul {
 .logo {
   max-width: 150px;
 }
-.import_titile {
+/* .import_titile {
   text-align: center;
-  width: 90%;
+  width: 60%;
   margin: auto;
   border: 1px solid #6c757d47;
-}
+  padding: 10px;
+  box-shadow: 10px 10px;
+} */
 .import_titile h1 {
   font-size: 16px;
 }

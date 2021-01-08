@@ -1,0 +1,10 @@
+.banner {
+    max-width: 500px;
+    margin: auto;
+}
+@media (max-width:720px) {
+    .banner {
+        max-width: 300px;
+        margin: auto;
+    }
+}

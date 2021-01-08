@@ -1,0 +1,108 @@
+.carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* fix blank or flashing items on carousel */
+  .owl-carousel .item {
+    position: relative;
+    z-index: 100; 
+    -webkit-backface-visibility: hidden; 
+  }
+  
+  /* end fix */
+  .owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+  }
+  
+  .owl-nav i {
+    font-size: 52px;
+  }
+  
+  .owl-nav .owl-prev {
+    left: -30px;
+  }
+  
+  .owl-nav .owl-next {
+    right: -30px;
+  }
+
+  /* Import Settings */
+  .size {
+      width: 90%!important;
+      z-index: 2;
+  }
+  .btn_first_cart {
+    padding: 1;
+    background: #f5deb300;
+    text-align: center;
+    display: block;
+    border: 1px solid var(--teal);
+    border-radius: 50px;
+    color: var(--secondary);
+    padding: 10px;
+    margin: revert;
+    display: block;
+    width: 98%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ .import_title_text {
+
+ }
+ .import_title_text  h1{
+    font-weight: revert;
+    border-bottom-color: 2px solid black;
+    border-bottom: 2px solid var(--teal);
+    width: 35%;
+    text-align: initial;
+}
+.import_x_info {
+
+}
+.import_x_info span {
+    
+}
+.carT:hover {
+ opacity: 50%;
+}
+.fa-windows {
+  color: #afaab7;
+  font-weight: lighter;
+}
+.fa-gamepad {
+  color: #afaab7;
+  font-weight: lighter;
+}
+@media (max-width:768px) {
+    .carousel-wrap {
+        width: 80%!important;
+    }
+    .import_title_text h1 {
+        font-weight: revert;
+        border-bottom-color: 2px solid black;
+        border-bottom: 2px solid var(--teal);
+        width: 100%;
+        text-align: center;
+        font-size: 21px;
+    }
+    .btn_first_cart {
+        background: #f5deb300;
+        text-align: center;
+        display: block;
+        border: 1px solid var(--teal);
+        border-radius: 50px;
+        color: var(--gray);
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    
+}

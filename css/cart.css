@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+.title h1 {
+ font-size: 15px;
+ text-align: left;
+}
+.title h2 {
+ text-align: left;
+ font-size: 25px;
+ font-weight: bolder;
+ color: #333;
+}
+.title h3 {
+ color: #999;
+ font-size: 16px;
+}
+.tabs {
+ text-align: end;
+}
+.tab {
+ cursor: pointer;
+ padding: 10px 20px;
+ margin: 0px 2px;
+ display: inline-block;
+ color: #000;
+ border-radius: 3px 3px 0px 0px;
+}
+.panels {
+ background: #dcd6d6f6;
+ box-shadow: 0 2rem 2rem #00000080;
+ min-height: 200px;
+ width: 100%;
+ border-radius: 3px;
+ overflow: hidden;
+ padding: 20px;
+}
+.panel{
+ display:none;
+ animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+ font-size:1.5em;
+ font-weight:bold
+}
+.radio{
+ display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+ display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#one:checked ~ .tabs #one-tab, #two:checked ~ .tabs #two-tab, #three:checked ~ .tabs #three-tab {
+ background: #fffffff6;
+ color: #000;
+ border-bottom: 3px solid #F04E23;
+}
+.imagem_product {
+ max-width: 250px!important;
+}
+@media (max-width:768px) {
+    .imagem_product {
+     max-width: 150px!important;
+    }
+    .title h1 {
+     font-size: 25px;
+     color: #333;
+     text-align: center;
+    }
+    h2 {
+     color: #000;
+     text-align: center;
+     font-size: 11px;
+    }
+    .separate {
+     display: block!important;
+    }
+    .card {
+        text-align: center;
+        max-width: 400px!important;
+        padding: 10px;
+        height: 360px!important;
+    }
+}
+.nameproduct {
+ max-width: 300px;
+}
+.card {
+
+ text-align: center;
+    max-width: 400px;
+    padding: 10px;
+    height: 500px;
+}
+
+.cartwidth {
+ width: 90%;
+ margin: auto;
+}
+.warpper h2 {
+ position: absolute;
+ background: red;
+ color: white;
+ border-radius: 120%;
+    padding: 20px;
+ /* background: red; */
+ /* width: 26%; */
+/*  color: white;
+ border-radius: 120%;
+ padding: 20px; */
+}
+
+@media (max-width:1200px) {
+    .tabs {
+     text-align: center;
+     display: grid;
+    }
+    .nameproduct {
+     text-align: center;
+    }
+    .warpper h2 {
+     position: relative;
+     border-bottom: 1px solid #ecebeb;
+     font-size: 20px;
+     font-weight: bolder;
+
+
+     }
+    }
+    .panels {
+     background: #dcd6d6f6;
+     box-shadow: 0 2rem 2rem #00000080;
+     min-height: 200px;
+     width: 100%;
+     border-radius: 3px;
+     overflow: hidden;
+     padding: 20px;
+     display: contents;
+    }
+    
+
+.btn_for_cart {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* top: 1px; */
+    margin: 10px;
+    /* margin-bottom: 0px; */
+    border: 1px solid var(--info);
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: cadetblue;
+    padding: 10px;
+}
+.fa-shopping-cart {
+  color: var(--gray);
+}
+.btn_cart {
+ background: var(--primary);
+ color: white;
+ 
+ padding: 9px 0px;
+ border: 1px solid var(--dark);
+}
+.btn_cart a {
+ color: white;
+ font-weight: 500;
+ padding: 11px 13px;
+}
+.title {
+ display: block;
+ text-align: center;
+ font-size: 17px;
+}
+.separate {
+    display: block;
+}
+
+/* Segundo Radio Tabs */
+/* PRESENTATIONAL STYLES */
+.width_lorem {
+    width: 90%;
+    margin: auto;
+}
+/* body {
+    background-color: #ddd;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5;
+  } */
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+/*   .radio-tabs .panel img {
+    margin: 0 15px;
+    width: 25%;
+  } */
+  
+  /* DEMO STYLES */
+  
+  /* Android 2.3 :checked fix */
+  @keyframes fix {
+    from {
+      opacity: 1;
+    }
+    to {
+      opactity: 1
+    }
+  }
+  
+/*   body {
+    animation: fix 1s infinite;
+  } */
+  
+  .radio-tabs .state {
+    position: absolute;
+    left: -10000px;
+  }
+  
+  #breakfast:focus ~ .tabs #breakfast-tab,
+  #dinner:focus ~ .tabs #dinner-tab,
+  #dessert:focus ~ .tabs #dessert-tab {
+    /* box-shadow: 0 0 3px 3px rgba(0,127,255,.5); */
+  }
+  
+  .radio-tabs .tab {
+    display: inline-block;
+    padding: .5em;
+    vertical-align: top;
+    background-color: #eee0;
+    cursor: hand;
+    cursor: pointer;
+  }
+  .radio-tabs .tab:hover {
+     background-color: #fff;
+  }
+  
+  #breakfast:checked ~ .tabs #breakfast-tab,
+  #dinner:checked ~ .tabs #dinner-tab,
+  #dessert:checked ~ .tabs #dessert-tab {
+    background-color: #fff;
+    border-bottom: 3px solid #F04E23;
+    cursor: default;
+  }
+  
+  .radio-tabs .panels {
+    background-color: #fff;
+    padding: .5em;
+  }
+  
+  .radio-tabs .panel {
+     display: none;
+  }
+  
+  #breakfast:checked ~ .panels #breakfast-panel,
+  #dinner:checked ~ .panels #dinner-panel,
+  #dessert:checked ~ .panels #dessert-panel {
+    display: inline-block;
+  }
+/* Segunda Radio Tabs End */
+
+.ofertas > h1 {
+ font-size: 36px;
+ background: var(--dark);
+ width: 25%;
+ text-align: center;
+ border-radius: 120%;
+ color: white;
+ padding: 16px;
+}
+@media (max-width:768px) {
+  .ofertas > h1 {
+   font-size: 16px;
+   background: var(--dark);
+   width: 31%;
+   text-align: center;
+   border-radius: 120%;
+   color: white;
+   padding: 9px;
+  }
+  .warpper h2 {
+    background: red;
+    width: 100%;
+    color: white;
+    border-radius: 120%;
+    padding: 20px;
+  }
+
+  
+ 
+  
+}

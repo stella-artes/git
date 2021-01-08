@@ -8,6 +8,7 @@
  font-size: 25px;
  font-weight: bolder;
  color: #333;
+ text-transform: uppercase;
 }
 .title h3 {
  color: #999;
